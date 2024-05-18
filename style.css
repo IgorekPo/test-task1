@@ -112,11 +112,8 @@ a{
     font-size: 24px;
     line-height: 150%;
     color: #2d2d2d;
-    align-self: baseline;
 }
-.task__informations-text::marker {
-    padding-left: 24px;
-}
+
 .link {
     font-weight: 400;
     font-size: 24px;
@@ -125,7 +122,6 @@ a{
     text-decoration-skip-ink: none;
     color: #2d2d2d;
     align-self: flex-end;
-
 }
 
 @media (max-width: 1124px){
@@ -133,10 +129,20 @@ a{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width: 769px){
     .task__items {
         grid-template-columns: repeat(1, 1fr);
     }
     
+}
+@media (max-width: 496px){
+    .title {
+        font-size: 25px;
+    }
+    .task__informations-text {
+        font-size: 16px;
+    }
+    .link {
+        font-size: 22px;
+    }
 }
