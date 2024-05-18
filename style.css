@@ -50,7 +50,7 @@ a{
 .task {
 }
 .task__conteiner {
-    padding: 24px;
+    padding: 30px;
 }
 .task__items {
     display: grid;
