@@ -57,9 +57,23 @@ a{
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
 }
-.task__items img{
-    margin-bottom: 24px;
+.icons{
     align-self: flex-end;
+    height: 100px;
+    width: 98px;
+    margin-bottom: 24px;
+}
+.icon-yellow{
+    fill: #F5AF23;
+}
+.icon-green{
+    fill: #179D2E;
+}
+.icon-blue{
+    fill: #0177B8;
+}
+.icon-red{
+    fill: #F02E2C;
 }
 .task__item {
     border-radius: 4px;
