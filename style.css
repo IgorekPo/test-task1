@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body {
+    line-height: 1;
+    font-family: "Inter", sans-serif;
+
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+input {
+    outline:none;
+}
+main{
+    flex: 1 1 auto;
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+[class*='__conteiner'] {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+/* ============================= */
+
+
+.task {
+}
+.task__conteiner {
+    padding: 24px;
+}
+.task__items {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.task__items img{
+    margin-bottom: 24px;
+    align-self: flex-end;
+}
+.task__item {
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 24px;
+}
+.item-green{
+    border: 2px solid #179d2e;
+}
+.item-blue{
+    border: 2px solid #0177b8;
+}
+.item-yellow{
+    border: 2px solid #f5af23;
+}
+.item-red{
+    border: 2px solid #f02e2c;
+}
+.title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    color: #181833;
+}
+.task__informations {
+    margin-bottom: 24px;
+    flex: 1 1 auto;
+    padding: 0 24px;
+}
+.task__informations-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #2d2d2d;
+    align-self: baseline;
+}
+.task__informations-text::marker {
+    padding-left: 24px;
+}
+.link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #2d2d2d;
+    align-self: flex-end;
+
+}
+
+@media (max-width: 1124px){
+    .task__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 769px){
+    .task__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
