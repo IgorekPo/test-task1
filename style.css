@@ -63,18 +63,7 @@ a{
     width: 98px;
     margin-bottom: 24px;
 }
-.icon-yellow{
-    fill: #F5AF23;
-}
-.icon-green{
-    fill: #179D2E;
-}
-.icon-blue{
-    fill: #0177B8;
-}
-.icon-red{
-    fill: #F02E2C;
-}
+
 .task__item {
     border-radius: 4px;
     display: flex;
@@ -83,18 +72,28 @@ a{
     justify-content: flex-start;
     padding: 24px;
 }
-.item-green{
+.task__item:nth-child(4n+1),
+.task__item.icons:nth-child(4n+1) {
     border: 2px solid #179d2e;
+    fill: #179D2E;
+
 }
-.item-blue{
+.task__item:nth-child(4n+2),
+.task__item.icons:nth-child(4n+2){
     border: 2px solid #0177b8;
+    fill: #0177b8;
 }
-.item-yellow{
+.task__item:nth-child(4n+3),
+.task__item.icons:nth-child(4n+3) {
     border: 2px solid #f5af23;
+    fill: #f5af23;
 }
-.item-red{
+.task__item:nth-child(4n+4),
+.task__item.icons:nth-child(4n+4) {
     border: 2px solid #f02e2c;
+    fill: #f02e2c;
 }
+
 .title {
     margin-bottom: 24px;
     font-weight: 600;
